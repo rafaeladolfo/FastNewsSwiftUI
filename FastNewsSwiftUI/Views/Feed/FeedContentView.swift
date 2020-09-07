@@ -21,9 +21,9 @@ struct FeedContentView: View {
             VStack {
                 HStack {
                     Spacer()
-                    Image(uiImage: model.image)
+                    Image(uiImage: model.image)                        
                         .frame(width: 320, height: 200, alignment: .center)
-                        .background(Color.red)
+                        .background(Color.gray)
                         .clipped()
                     Spacer()
                 }

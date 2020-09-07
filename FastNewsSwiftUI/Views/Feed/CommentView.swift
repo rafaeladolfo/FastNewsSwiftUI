@@ -22,10 +22,14 @@ struct CommentView: View {
                 .fixedSize(horizontal: false, vertical: true)
             HStack {
                 Spacer()                
-                Text(model.ups).foregroundColor(Color.blue)
+                Text(model.ups)
+                    .foregroundColor(Color.blue)
                 Image(systemName: "arrow.up")
-                Text(model.downs).foregroundColor(Color.red)
+                    .foregroundColor(Color.blue)
+                Text(model.downs)
+                    .foregroundColor(Color.red)
                 Image(systemName: "arrow.down")
+                    .foregroundColor(Color.red)
             }
             .font(.caption)
             .padding()

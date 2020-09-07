@@ -36,13 +36,13 @@ struct HotNewsViewModel: Identifiable {
         url = hotNews.url ?? ""
         ups = hotNews.ups?.toString ?? ""
         downs = hotNews.downs?.toString ?? ""
-        image = UIImage()
+        image = UIImage(systemName: "photo.fill")!
         name = hotNews.name ?? ""
         
         // preview url
         let previewUrl = hotNews.preview?.images?.first?.source?.url?.htmlDecoded ?? ""
         guard let url = URL(string: previewUrl) else { return }
         guard let data = try? Data(contentsOf: url) else { return }
-        image = UIImage(data: data) ?? UIImage()
+        image = UIImage(data: data) ?? UIImage(systemName: "photo.fill")!
     }
 }
