@@ -1,5 +1,5 @@
 //
-//  Source.swift
+//  HotNewsData.swift
 //  FastNewsSwiftUI
 //
 //  Created by Rafael Adolfo on 06/09/20.
@@ -8,13 +8,9 @@
 
 import Foundation
 
-struct Source: Codable {
+struct HotNewsData: Codable {
     
     //MARK: - Properties
     
-    var url: String?
-    
-    private enum CodingKeys: String, CodingKey {
-        case url
-    }
+    var data: HotNews
 }

@@ -9,19 +9,26 @@
 import SwiftUI
 
 struct FeedView: View {
+    @ObservedObject var viewModel = FeedViewModel.shared
+    
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    NavigationLink(destination: FeedDetailView()) {
-                        Spacer()
-                        FeedContentView()
-                        Spacer()
+                ForEach(viewModel.hotNewsList) { news in
+                    HStack {
+                        NavigationLink(destination: FeedDetailView(hotNewsViewModel: news)) {
+                            Spacer()
+                            
+                            FeedContentView(model: news)
+                            Spacer()
+                        }
                     }
-                    
                 }
             }
             .navigationBarTitle("Fast News")
+        }
+        .onAppear(){
+            self.viewModel.getHotNews()
         }
     }
 }
