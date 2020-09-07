@@ -15,6 +15,7 @@ struct HotNews: Codable, Identifiable {
     var id: String?
     var title: String?
     var preview: Preview?
+    var name: String?
     var url: String?
     var created: Int?
     var ups: Int?
@@ -26,7 +27,7 @@ struct HotNews: Codable, Identifiable {
     var author: String?
     
     private enum CodingKeys: String, CodingKey {
-        case id, title, preview, url, created, ups, downs, score, author
+        case id, title, preview, url, created, ups, downs, score, author, name
         case authorFullname = "author_fullname"
         case numComments = "num_comments"
     }

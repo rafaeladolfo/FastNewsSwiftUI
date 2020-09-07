@@ -17,10 +17,10 @@ struct FeedView: View {
                 ForEach(viewModel.hotNewsList) { news in
                     HStack {
                         NavigationLink(destination: FeedDetailView(hotNewsViewModel: news)) {
-                            Spacer()
-                            
                             FeedContentView(model: news)
-                            Spacer()
+                                .onAppear(){
+                                    self.viewModel.checkNeedToLoadMore(currentName: news.name)
+                            }
                         }
                     }
                 }
