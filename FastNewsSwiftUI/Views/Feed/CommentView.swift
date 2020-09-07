@@ -9,21 +9,22 @@
 import SwiftUI
 
 struct CommentView: View {
+    let model: CommentViewModel
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("Author")
-                Text("10 hours")
+                Text(model.author)
+                Text(model.createdAt)
             }
             .font(.caption)
-            Text("A very positive and full of words comment for that good news.")
+            Text(model.body)
                 .fixedSize(horizontal: false, vertical: true)
             HStack {
                 Spacer()                
-                Text("999+").foregroundColor(Color.blue)
+                Text(model.ups).foregroundColor(Color.blue)
                 Image(systemName: "arrow.up")
-                Text("999+").foregroundColor(Color.red)
+                Text(model.downs).foregroundColor(Color.red)
                 Image(systemName: "arrow.down")
             }
             .font(.caption)
@@ -35,6 +36,6 @@ struct CommentView: View {
 
 struct CommentView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentView()
+        CommentView(model: CommentViewModel(comment: Comment()))
     }
 }

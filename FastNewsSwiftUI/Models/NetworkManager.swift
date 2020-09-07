@@ -16,4 +16,8 @@ struct NetworkManager {
     func getNews(afterValue: String, completion: @escaping ClosureType<Listing>, failure: @escaping Failure){
         redditNewsProvider.request(.getNews(limitKey: kLimitKey, limitValue: kLimitValue, afterKey: kAfterKey, afterValue: afterValue), model: Listing.self , completion: completion, failure: failure)
     }
+    
+    func getComments(newsId: String, completion: @escaping ClosureType<[CommentListing]>, failure: @escaping Failure) {
+        redditNewsProvider.request(.getComments(newsId: newsId), model: [CommentListing].self, completion: completion, failure: failure)
+    }
 }

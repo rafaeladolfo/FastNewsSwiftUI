@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import URLImage
 
 struct FeedContentView: View {
     var model: HotNewsViewModel

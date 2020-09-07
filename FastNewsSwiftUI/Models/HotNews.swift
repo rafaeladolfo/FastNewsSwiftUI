@@ -9,7 +9,9 @@
 import Foundation
 
 struct HotNews: Codable, Identifiable {
-        
+    
+    //MARK: - Properties
+    
     var id: String?
     var title: String?
     var preview: Preview?

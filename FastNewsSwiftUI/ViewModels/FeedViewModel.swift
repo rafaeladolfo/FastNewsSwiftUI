@@ -8,18 +8,15 @@
 
 import Foundation
 
-protocol FeedViewProtocol {
-    var hotNewsList: [HotNewsViewModel] { get }
-    var isLoading: Bool { get }
-    var after: String { get }
-    
-    func getHotNews()
-}
-
 final class FeedViewModel: ObservableObject {
+    
+    //MARK: - Properties
+    
     @Published var hotNewsList: [HotNewsViewModel]
     @Published var isLoading = false
     var after = ""
+    
+    //MARK: - Singleton
     
     static let shared: FeedViewModel = FeedViewModel()
     
@@ -29,6 +26,8 @@ final class FeedViewModel: ObservableObject {
 }
 
 extension FeedViewModel {
+    
+    //MARK: - Public Implementations
     
     func getHotNews() {
         NetworkManager.shared.getNews(afterValue: self.after , completion: { (Response) in

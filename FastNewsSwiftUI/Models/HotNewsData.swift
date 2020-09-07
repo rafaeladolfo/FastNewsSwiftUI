@@ -9,5 +9,8 @@
 import Foundation
 
 struct HotNewsData: Codable {
+    
+    //MARK: - Properties
+    
     var data: HotNews
 }
