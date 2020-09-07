@@ -12,23 +12,25 @@ struct FeedView: View {
     @ObservedObject var viewModel = FeedViewModel.shared
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(viewModel.hotNewsList) { news in
-                    HStack {
-                        NavigationLink(destination: FeedDetailView(hotNewsViewModel: news)) {
-                            FeedContentView(model: news)
-                                .onAppear(){
-                                    self.viewModel.checkNeedToLoadMore(currentName: news.name)
+        LoadingView(isShowing: $viewModel.isLoading) {
+            NavigationView {
+                List {
+                    ForEach(self.viewModel.hotNewsList) { news in
+                        HStack {
+                            NavigationLink(destination: FeedDetailView(hotNewsViewModel: news)) {
+                                FeedContentView(model: news)
+                                    .onAppear(){
+                                        self.viewModel.checkNeedToLoadMore(currentName: news.name)
+                                }
                             }
                         }
                     }
                 }
+                .navigationBarTitle("Fast News")
             }
-            .navigationBarTitle("Fast News")
-        }
-        .onAppear(){
-            self.viewModel.getHotNews()
+            .onAppear(){
+                self.viewModel.getHotNews()
+            }
         }
     }
 }

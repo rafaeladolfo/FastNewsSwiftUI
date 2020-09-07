@@ -18,6 +18,8 @@
 		378FAFB52506780E00820841 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FAFB42506780E00820841 /* Int+Ext.swift */; };
 		378FAFB72506793200820841 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FAFB62506793200820841 /* Date+Ext.swift */; };
 		37D99C8B2505AF2A00DD3948 /* ListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99C8A2505AF2A00DD3948 /* ListingData.swift */; };
+		37F354FC2506D70000B68007 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F354FB2506D70000B68007 /* ActivityIndicatorView.swift */; };
+		37F354FF2506D73300B68007 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F354FE2506D73300B68007 /* LoadingView.swift */; };
 		37F98C642505241D00F983C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C632505241D00F983C2 /* AppDelegate.swift */; };
 		37F98C662505241D00F983C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C652505241D00F983C2 /* SceneDelegate.swift */; };
 		37F98C6A2505242200F983C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F98C692505242200F983C2 /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		378FAFB42506780E00820841 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		378FAFB62506793200820841 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		37D99C8A2505AF2A00DD3948 /* ListingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingData.swift; sourceTree = "<group>"; };
+		37F354FB2506D70000B68007 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		37F354FE2506D73300B68007 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		37F98C602505241D00F983C2 /* FastNewsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastNewsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F98C632505241D00F983C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F98C652505241D00F983C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,22 @@
 				378FAFB62506793200820841 /* Date+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37F354FA2506D6E100B68007 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				37F354FB2506D70000B68007 /* ActivityIndicatorView.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		37F354FD2506D72800B68007 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				37F354FE2506D73300B68007 /* LoadingView.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		37F98C572505241D00F983C2 = {
@@ -245,6 +265,8 @@
 		37F98C95250525E900F983C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37F354FD2506D72800B68007 /* Loading */,
+				37F354FA2506D6E100B68007 /* ActivityIndicator */,
 				37F98CA8250571C300F983C2 /* Feed */,
 			);
 			path = Views;
@@ -426,6 +448,7 @@
 				37F98CBA2505825800F983C2 /* NetworkEncoding.swift in Sources */,
 				37F98CC72505830300F983C2 /* RedditNewsEndPoint.swift in Sources */,
 				37F98CCB2505864800F983C2 /* NetworkUtils.swift in Sources */,
+				37F354FC2506D70000B68007 /* ActivityIndicatorView.swift in Sources */,
 				37644A2A25069A4A005BA7FE /* CommentListing.swift in Sources */,
 				37F98CCD250587EB00F983C2 /* NetworkRoutable.swift in Sources */,
 				378FAFB52506780E00820841 /* Int+Ext.swift in Sources */,
@@ -436,6 +459,7 @@
 				37F98C992505260E00F983C2 /* FeedDetailView.swift in Sources */,
 				37644A24250684E8005BA7FE /* CommentViewModel.swift in Sources */,
 				37F98CA12505265200F983C2 /* Comment.swift in Sources */,
+				37F354FF2506D73300B68007 /* LoadingView.swift in Sources */,
 				37F98CA72505266F00F983C2 /* Source.swift in Sources */,
 				37F98CC5250582BD00F983C2 /* NetworkConstants.swift in Sources */,
 				37F98C972505260600F983C2 /* FeedView.swift in Sources */,
