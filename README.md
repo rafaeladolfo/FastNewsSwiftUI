@@ -4,6 +4,7 @@ This repository contains the iOS test source code.
 
 ### Stack
 * Using SwiftUI 
+* MVVM
 
 ### Features
 * Integration with reddit api
