@@ -10,13 +10,19 @@ import SwiftUI
 
 struct FeedDetailView: View {
     let hotNewsViewModel: HotNewsViewModel
+    @ObservedObject var feedDetailViewModel = FeedDetailViewModel.shared
     
     var body: some View {
         VStack {
             FeedContentView(model: hotNewsViewModel)
-            List {
-                CommentView()
+                List {
+                    ForEach(feedDetailViewModel.commentsList) { comment in
+                        CommentView(model: comment)
+                }
             }
+        }
+        .onAppear(){
+             self.feedDetailViewModel.getComments(newsId: self.hotNewsViewModel.id)
         }
     }
 }

@@ -1,18 +1,18 @@
 //
-//  ListingData.swift
+//  CommentListingData.swift
 //  FastNewsSwiftUI
 //
-//  Created by Rafael Adolfo on 06/09/20.
+//  Created by Rafael Adolfo on 07/09/20.
 //  Copyright © 2020 Rafael Adolfo. All rights reserved.
 //
 
 import Foundation
 
-struct ListingData: Codable {
+struct CommentListingData: Codable {
     
     //MARK: - Properties
     
-    let children: [HotNewsData]
+    let children: [CommentData]
     let after: String?
     let before: String?
 }

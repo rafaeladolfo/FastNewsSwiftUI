@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37506D9D2505CE76006C2720 /* FeedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37506D9C2505CE76006C2720 /* FeedContentView.swift */; };
 		37506D9F25065F8C006C2720 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37506D9E25065F8C006C2720 /* CommentView.swift */; };
-		378FAFAE2506709400820841 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 378FAFAD2506709400820841 /* URLImage */; };
+		37644A24250684E8005BA7FE /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37644A23250684E8005BA7FE /* CommentViewModel.swift */; };
+		37644A26250699EE005BA7FE /* CommentListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37644A25250699EE005BA7FE /* CommentListingData.swift */; };
+		37644A2825069A0C005BA7FE /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37644A2725069A0C005BA7FE /* CommentData.swift */; };
+		37644A2A25069A4A005BA7FE /* CommentListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37644A2925069A4A005BA7FE /* CommentListing.swift */; };
 		378FAFB12506730000820841 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FAFB02506730000820841 /* String+Ext.swift */; };
 		378FAFB3250677F500820841 /* HotNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FAFB2250677F500820841 /* HotNewsViewModel.swift */; };
 		378FAFB52506780E00820841 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FAFB42506780E00820841 /* Int+Ext.swift */; };
@@ -65,6 +68,10 @@
 /* Begin PBXFileReference section */
 		37506D9C2505CE76006C2720 /* FeedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentView.swift; sourceTree = "<group>"; };
 		37506D9E25065F8C006C2720 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		37644A23250684E8005BA7FE /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		37644A25250699EE005BA7FE /* CommentListingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListingData.swift; sourceTree = "<group>"; };
+		37644A2725069A0C005BA7FE /* CommentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
+		37644A2925069A4A005BA7FE /* CommentListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListing.swift; sourceTree = "<group>"; };
 		378FAFB02506730000820841 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		378FAFB2250677F500820841 /* HotNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNewsViewModel.swift; sourceTree = "<group>"; };
 		378FAFB42506780E00820841 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
@@ -111,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FAFAE2506709400820841 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +224,9 @@
 				37F98CA62505266F00F983C2 /* Source.swift */,
 				37F98CD0250593B400F983C2 /* HotNewsData.swift */,
 				37D99C8A2505AF2A00DD3948 /* ListingData.swift */,
+				37644A25250699EE005BA7FE /* CommentListingData.swift */,
+				37644A2725069A0C005BA7FE /* CommentData.swift */,
+				37644A2925069A4A005BA7FE /* CommentListing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				37F98C9A2505262600F983C2 /* FeedViewModel.swift */,
 				37F98C9C2505262F00F983C2 /* FeedDetailViewModel.swift */,
 				378FAFB2250677F500820841 /* HotNewsViewModel.swift */,
+				37644A23250684E8005BA7FE /* CommentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -292,7 +302,6 @@
 			);
 			name = FastNewsSwiftUI;
 			packageProductDependencies = (
-				378FAFAD2506709400820841 /* URLImage */,
 			);
 			productName = FastNewsSwiftUI;
 			productReference = 37F98C602505241D00F983C2 /* FastNewsSwiftUI.app */;
@@ -367,7 +376,6 @@
 			);
 			mainGroup = 37F98C572505241D00F983C2;
 			packageReferences = (
-				378FAFAC2506709400820841 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 37F98C612505241D00F983C2 /* Products */;
 			projectDirPath = "";
@@ -418,6 +426,7 @@
 				37F98CBA2505825800F983C2 /* NetworkEncoding.swift in Sources */,
 				37F98CC72505830300F983C2 /* RedditNewsEndPoint.swift in Sources */,
 				37F98CCB2505864800F983C2 /* NetworkUtils.swift in Sources */,
+				37644A2A25069A4A005BA7FE /* CommentListing.swift in Sources */,
 				37F98CCD250587EB00F983C2 /* NetworkRoutable.swift in Sources */,
 				378FAFB52506780E00820841 /* Int+Ext.swift in Sources */,
 				37F98CC02505828A00F983C2 /* NetworkService.swift in Sources */,
@@ -425,6 +434,7 @@
 				37F98CCF250588E300F983C2 /* Listing.swift in Sources */,
 				378FAFB12506730000820841 /* String+Ext.swift in Sources */,
 				37F98C992505260E00F983C2 /* FeedDetailView.swift in Sources */,
+				37644A24250684E8005BA7FE /* CommentViewModel.swift in Sources */,
 				37F98CA12505265200F983C2 /* Comment.swift in Sources */,
 				37F98CA72505266F00F983C2 /* Source.swift in Sources */,
 				37F98CC5250582BD00F983C2 /* NetworkConstants.swift in Sources */,
@@ -436,7 +446,9 @@
 				37F98CA32505265D00F983C2 /* Preview.swift in Sources */,
 				37F98CBC2505826C00F983C2 /* NetworkManager.swift in Sources */,
 				378FAFB3250677F500820841 /* HotNewsViewModel.swift in Sources */,
+				37644A2825069A0C005BA7FE /* CommentData.swift in Sources */,
 				37F98C9D2505262F00F983C2 /* FeedDetailViewModel.swift in Sources */,
+				37644A26250699EE005BA7FE /* CommentListingData.swift in Sources */,
 				37F98CA52505266500F983C2 /* Image.swift in Sources */,
 				37506D9D2505CE76006C2720 /* FeedContentView.swift in Sources */,
 				37F98CD1250593B400F983C2 /* HotNewsData.swift in Sources */,
@@ -768,25 +780,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		378FAFAC2506709400820841 /* XCRemoteSwiftPackageReference "url-image" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.19;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		378FAFAD2506709400820841 /* URLImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 378FAFAC2506709400820841 /* XCRemoteSwiftPackageReference "url-image" */;
-			productName = URLImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37F98C582505241D00F983C2 /* Project object */;
 }

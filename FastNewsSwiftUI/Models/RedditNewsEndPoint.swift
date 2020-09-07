@@ -11,7 +11,7 @@ import Foundation
 //MARK: API paths alias
 enum RedditNewsEndPoint {
     case getNews(limitKey: String, limitValue: Int, afterKey: String, afterValue: String)
-    case getComments
+    case getComments(newsId: String)
 }
 
 //MARK: API endpoints paths
@@ -66,8 +66,8 @@ extension RedditNewsEndPoint : EndPointType {
         switch self {
         case .getNews:
             return RedditNewsEndPointPath.getNews
-        case .getComments:
-            return RedditNewsEndPointPath.getComments
+        case .getComments(let newsId):
+            return RedditNewsEndPointPath.getComments.replacingOccurrences(of: "@", with: newsId)
         }
     }
     

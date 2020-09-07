@@ -9,6 +9,9 @@
 import Foundation
 
 struct Source: Codable {
+    
+    //MARK: - Properties
+    
     var url: String?
     
     private enum CodingKeys: String, CodingKey {
