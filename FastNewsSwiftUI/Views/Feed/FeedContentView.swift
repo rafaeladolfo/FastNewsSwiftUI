@@ -17,17 +17,24 @@ struct FeedContentView: View {
                 Text(model.author)
                 Text(model.createdAt)
             }
-            VStack {                
-                Image(uiImage: model.image)
-                    .frame(width: 320, height: 200, alignment: .center)
-                    .background(Color.red)
-                    .clipped()
-                
+            .padding(.leading, 15)
+            VStack {
+                HStack {
+                    Spacer()
+                    Image(uiImage: model.image)                        
+                        .frame(width: 320, height: 200, alignment: .center)
+                        .background(Color.gray)
+                        .clipped()
+                    Spacer()
+                }
                 Text(model.title)
                     .fixedSize(horizontal: false, vertical: true)
             }
             HStack(alignment: .center, spacing: 20 ){
-                Image(systemName: "square.and.arrow.up.fill")
+                Spacer()
+                Button(action: share){
+                    Image(systemName: "square.and.arrow.up.fill")
+                }
                 Image(systemName: "captions.bubble")
                 Text(model.comments)
                 Image(systemName: "arrow.up")
@@ -35,7 +42,14 @@ struct FeedContentView: View {
                 Image(systemName: "arrow.down")
                 Text(model.downs)
             }
+            .padding()
         }
+    }
+    
+    func share() {
+        let url = URL(string: model.url)
+        let activityController = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityController, animated: true, completion: nil)
     }
 }
 
