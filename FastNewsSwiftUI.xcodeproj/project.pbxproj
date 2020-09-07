@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37506D9D2505CE76006C2720 /* FeedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37506D9C2505CE76006C2720 /* FeedContentView.swift */; };
+		37506D9F25065F8C006C2720 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37506D9E25065F8C006C2720 /* CommentView.swift */; };
+		37D99C8B2505AF2A00DD3948 /* ListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99C8A2505AF2A00DD3948 /* ListingData.swift */; };
 		37F98C642505241D00F983C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C632505241D00F983C2 /* AppDelegate.swift */; };
 		37F98C662505241D00F983C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C652505241D00F983C2 /* SceneDelegate.swift */; };
 		37F98C6A2505242200F983C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F98C692505242200F983C2 /* Assets.xcassets */; };
@@ -23,8 +26,18 @@
 		37F98CA32505265D00F983C2 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CA22505265D00F983C2 /* Preview.swift */; };
 		37F98CA52505266500F983C2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CA42505266500F983C2 /* Image.swift */; };
 		37F98CA72505266F00F983C2 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CA62505266F00F983C2 /* Source.swift */; };
-		37F98CAC250571EB00F983C2 /* FeedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CAB250571EB00F983C2 /* FeedContentView.swift */; };
-		37F98CAE25057BA800F983C2 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CAD25057BA800F983C2 /* CommentView.swift */; };
+		37F98CBA2505825800F983C2 /* NetworkEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CB92505825800F983C2 /* NetworkEncoding.swift */; };
+		37F98CBC2505826C00F983C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CBB2505826C00F983C2 /* NetworkManager.swift */; };
+		37F98CBE2505827A00F983C2 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CBD2505827A00F983C2 /* NetworkResponse.swift */; };
+		37F98CC02505828A00F983C2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CBF2505828A00F983C2 /* NetworkService.swift */; };
+		37F98CC3250582A400F983C2 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CC2250582A400F983C2 /* EndPointType.swift */; };
+		37F98CC5250582BD00F983C2 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CC4250582BD00F983C2 /* NetworkConstants.swift */; };
+		37F98CC72505830300F983C2 /* RedditNewsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CC62505830300F983C2 /* RedditNewsEndPoint.swift */; };
+		37F98CC9250584AB00F983C2 /* NetworkVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CC8250584AB00F983C2 /* NetworkVariables.swift */; };
+		37F98CCB2505864800F983C2 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CCA2505864800F983C2 /* NetworkUtils.swift */; };
+		37F98CCD250587EB00F983C2 /* NetworkRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CCC250587EB00F983C2 /* NetworkRoutable.swift */; };
+		37F98CCF250588E300F983C2 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CCE250588E300F983C2 /* Listing.swift */; };
+		37F98CD1250593B400F983C2 /* HotNewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98CD0250593B400F983C2 /* HotNewsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37506D9C2505CE76006C2720 /* FeedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentView.swift; sourceTree = "<group>"; };
+		37506D9E25065F8C006C2720 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		37D99C8A2505AF2A00DD3948 /* ListingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingData.swift; sourceTree = "<group>"; };
 		37F98C602505241D00F983C2 /* FastNewsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastNewsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F98C632505241D00F983C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F98C652505241D00F983C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +83,18 @@
 		37F98CA22505265D00F983C2 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		37F98CA42505266500F983C2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		37F98CA62505266F00F983C2 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
-		37F98CAB250571EB00F983C2 /* FeedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedContentView.swift; path = FastNewsSwiftUI/Models/FeedContentView.swift; sourceTree = SOURCE_ROOT; };
-		37F98CAD25057BA800F983C2 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentView.swift; path = FastNewsSwiftUI/Models/CommentView.swift; sourceTree = SOURCE_ROOT; };
+		37F98CB92505825800F983C2 /* NetworkEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkEncoding.swift; path = FastNewsSwiftUI/Models/NetworkEncoding.swift; sourceTree = SOURCE_ROOT; };
+		37F98CBB2505826C00F983C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = FastNewsSwiftUI/Models/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		37F98CBD2505827A00F983C2 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkResponse.swift; path = FastNewsSwiftUI/Models/NetworkResponse.swift; sourceTree = SOURCE_ROOT; };
+		37F98CBF2505828A00F983C2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = FastNewsSwiftUI/Models/NetworkService.swift; sourceTree = SOURCE_ROOT; };
+		37F98CC2250582A400F983C2 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EndPointType.swift; path = FastNewsSwiftUI/Models/EndPointType.swift; sourceTree = SOURCE_ROOT; };
+		37F98CC4250582BD00F983C2 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkConstants.swift; path = FastNewsSwiftUI/Models/NetworkConstants.swift; sourceTree = SOURCE_ROOT; };
+		37F98CC62505830300F983C2 /* RedditNewsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RedditNewsEndPoint.swift; path = FastNewsSwiftUI/Models/RedditNewsEndPoint.swift; sourceTree = SOURCE_ROOT; };
+		37F98CC8250584AB00F983C2 /* NetworkVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkVariables.swift; path = FastNewsSwiftUI/Models/NetworkVariables.swift; sourceTree = SOURCE_ROOT; };
+		37F98CCA2505864800F983C2 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkUtils.swift; path = FastNewsSwiftUI/Models/NetworkUtils.swift; sourceTree = SOURCE_ROOT; };
+		37F98CCC250587EB00F983C2 /* NetworkRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkRoutable.swift; path = FastNewsSwiftUI/Models/NetworkRoutable.swift; sourceTree = SOURCE_ROOT; };
+		37F98CCE250588E300F983C2 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		37F98CD0250593B400F983C2 /* HotNewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNewsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +145,8 @@
 		37F98C622505241D00F983C2 /* FastNewsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				37F98CC12505829700F983C2 /* Protocols */,
+				37F98CB82505824F00F983C2 /* Network */,
 				37F98C95250525E900F983C2 /* Views */,
 				37F98C942505249900F983C2 /* ViewModels */,
 				37F98C932505248800F983C2 /* Models */,
@@ -161,11 +189,14 @@
 		37F98C932505248800F983C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				37F98CCE250588E300F983C2 /* Listing.swift */,
 				37F98C9E2505264900F983C2 /* HotNews.swift */,
 				37F98CA02505265200F983C2 /* Comment.swift */,
 				37F98CA22505265D00F983C2 /* Preview.swift */,
 				37F98CA42505266500F983C2 /* Image.swift */,
 				37F98CA62505266F00F983C2 /* Source.swift */,
+				37F98CD0250593B400F983C2 /* HotNewsData.swift */,
+				37D99C8A2505AF2A00DD3948 /* ListingData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,10 +223,34 @@
 			children = (
 				37F98C982505260E00F983C2 /* FeedDetailView.swift */,
 				37F98C962505260600F983C2 /* FeedView.swift */,
-				37F98CAB250571EB00F983C2 /* FeedContentView.swift */,
-				37F98CAD25057BA800F983C2 /* CommentView.swift */,
+				37506D9C2505CE76006C2720 /* FeedContentView.swift */,
+				37506D9E25065F8C006C2720 /* CommentView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		37F98CB82505824F00F983C2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				37F98CB92505825800F983C2 /* NetworkEncoding.swift */,
+				37F98CBB2505826C00F983C2 /* NetworkManager.swift */,
+				37F98CBD2505827A00F983C2 /* NetworkResponse.swift */,
+				37F98CBF2505828A00F983C2 /* NetworkService.swift */,
+				37F98CC4250582BD00F983C2 /* NetworkConstants.swift */,
+				37F98CC62505830300F983C2 /* RedditNewsEndPoint.swift */,
+				37F98CC8250584AB00F983C2 /* NetworkVariables.swift */,
+				37F98CCA2505864800F983C2 /* NetworkUtils.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		37F98CC12505829700F983C2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				37F98CC2250582A400F983C2 /* EndPointType.swift */,
+				37F98CCC250587EB00F983C2 /* NetworkRoutable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,18 +385,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F98C9B2505262600F983C2 /* FeedViewModel.swift in Sources */,
-				37F98CAE25057BA800F983C2 /* CommentView.swift in Sources */,
+				37F98CC3250582A400F983C2 /* EndPointType.swift in Sources */,
 				37F98C642505241D00F983C2 /* AppDelegate.swift in Sources */,
-				37F98CAC250571EB00F983C2 /* FeedContentView.swift in Sources */,
+				37F98CBA2505825800F983C2 /* NetworkEncoding.swift in Sources */,
+				37F98CC72505830300F983C2 /* RedditNewsEndPoint.swift in Sources */,
+				37F98CCB2505864800F983C2 /* NetworkUtils.swift in Sources */,
+				37F98CCD250587EB00F983C2 /* NetworkRoutable.swift in Sources */,
+				37F98CC02505828A00F983C2 /* NetworkService.swift in Sources */,
+				37F98CCF250588E300F983C2 /* Listing.swift in Sources */,
 				37F98C992505260E00F983C2 /* FeedDetailView.swift in Sources */,
 				37F98CA12505265200F983C2 /* Comment.swift in Sources */,
 				37F98CA72505266F00F983C2 /* Source.swift in Sources */,
+				37F98CC5250582BD00F983C2 /* NetworkConstants.swift in Sources */,
 				37F98C972505260600F983C2 /* FeedView.swift in Sources */,
+				37506D9F25065F8C006C2720 /* CommentView.swift in Sources */,
+				37F98CBE2505827A00F983C2 /* NetworkResponse.swift in Sources */,
 				37F98C662505241D00F983C2 /* SceneDelegate.swift in Sources */,
 				37F98C9F2505264900F983C2 /* HotNews.swift in Sources */,
 				37F98CA32505265D00F983C2 /* Preview.swift in Sources */,
+				37F98CBC2505826C00F983C2 /* NetworkManager.swift in Sources */,
 				37F98C9D2505262F00F983C2 /* FeedDetailViewModel.swift in Sources */,
 				37F98CA52505266500F983C2 /* Image.swift in Sources */,
+				37506D9D2505CE76006C2720 /* FeedContentView.swift in Sources */,
+				37F98CD1250593B400F983C2 /* HotNewsData.swift in Sources */,
+				37D99C8B2505AF2A00DD3948 /* ListingData.swift in Sources */,
+				37F98CC9250584AB00F983C2 /* NetworkVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -492,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -511,11 +579,12 @@
 				DEVELOPMENT_TEAM = 2GPVEAAU5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FastNewsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaeladolfo.fastnewsswiftui.FastNewsSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaeladolfo.FastNewsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,11 +600,12 @@
 				DEVELOPMENT_TEAM = 2GPVEAAU5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FastNewsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaeladolfo.fastnewsswiftui.FastNewsSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaeladolfo.FastNewsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

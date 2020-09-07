@@ -9,24 +9,27 @@
 import SwiftUI
 
 struct CommentView: View {
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text("Author")
                 Text("10 hours")
-            }.font(.caption)
+            }
+            .font(.caption)
             Text("A very positive and full of words comment for that good news.")
-            .fixedSize(horizontal: false, vertical: true)
+                .fixedSize(horizontal: false, vertical: true)
             HStack {
-                Spacer()
-                Text("999+").foregroundColor(Color.blue)
-                Image(systemName: "arrow.up")
-                Text("999+").foregroundColor(Color.red)
-                Image(systemName: "arrow.down")
+                Spacer()                
+//                Text("999+").foregroundColor(Color.blue)
+                //                Image(systemName: "arrow.up")
+                //                Text("999+").foregroundColor(Color.red)
+                //                Image(source: arrowDown)
             }
             .font(.caption)
             .padding()
-        }.padding()
+        }
+        .padding()
     }
 }
 

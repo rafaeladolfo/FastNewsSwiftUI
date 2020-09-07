@@ -1,5 +1,5 @@
 //
-//  Image.swift
+//  HotNewsData.swift
 //  FastNewsSwiftUI
 //
 //  Created by Rafael Adolfo on 06/09/20.
@@ -8,10 +8,6 @@
 
 import Foundation
 
-struct NewsImage: Codable {
-    var source: Source?
-    
-    private enum CodingKeys: String, CodingKey {
-        case source
-    }
+struct HotNewsData: Codable {
+    var data: HotNews
 }

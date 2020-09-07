@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Preview: Codable {
+    var images: [NewsImage]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case images
+    }
+}

@@ -1,5 +1,5 @@
 //
-//  Image.swift
+//  ListingData.swift
 //  FastNewsSwiftUI
 //
 //  Created by Rafael Adolfo on 06/09/20.
@@ -8,10 +8,8 @@
 
 import Foundation
 
-struct NewsImage: Codable {
-    var source: Source?
-    
-    private enum CodingKeys: String, CodingKey {
-        case source
-    }
+struct ListingData: Codable {
+    let children: [HotNewsData]
+    let after: String?
+    let before: String?
 }

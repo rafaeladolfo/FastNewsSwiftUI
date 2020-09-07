@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct FeedContentView: View {
+    var model: HotNews
+    
     var body: some View {
         VStack (alignment: .leading) {
             HStack {
                 Text("Author")
                 Text("1 Hour")
             }
-            Image("test").frame(width: 320, height: 200, alignment: .center).background(Color.red)
+            VStack {
+                URL
+                .frame(width: 320, height: 200, alignment: .center).background(Color.red)
             Text("Preview of the hot news described here.")
                 .fixedSize(horizontal: false, vertical: true)
+            }
             HStack(alignment: .center, spacing: 20 ){
                 Image(systemName: "square.and.arrow.up.fill")
                 Image(systemName: "captions.bubble")
