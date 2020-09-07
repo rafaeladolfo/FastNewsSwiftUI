@@ -20,6 +20,8 @@
 		37D99C8B2505AF2A00DD3948 /* ListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99C8A2505AF2A00DD3948 /* ListingData.swift */; };
 		37F354FC2506D70000B68007 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F354FB2506D70000B68007 /* ActivityIndicatorView.swift */; };
 		37F354FF2506D73300B68007 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F354FE2506D73300B68007 /* LoadingView.swift */; };
+		37F355032506D9B000B68007 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F355052506D9B000B68007 /* Localizable.strings */; };
+		37F355092506D9FD00B68007 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F355082506D9FD00B68007 /* Constants.swift */; };
 		37F98C642505241D00F983C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C632505241D00F983C2 /* AppDelegate.swift */; };
 		37F98C662505241D00F983C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F98C652505241D00F983C2 /* SceneDelegate.swift */; };
 		37F98C6A2505242200F983C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F98C692505242200F983C2 /* Assets.xcassets */; };
@@ -81,6 +83,10 @@
 		37D99C8A2505AF2A00DD3948 /* ListingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingData.swift; sourceTree = "<group>"; };
 		37F354FB2506D70000B68007 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		37F354FE2506D73300B68007 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		37F355002506D93500B68007 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		37F355042506D9B000B68007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37F355062506D9B700B68007 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		37F355082506D9FD00B68007 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37F98C602505241D00F983C2 /* FastNewsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastNewsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F98C632505241D00F983C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F98C652505241D00F983C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +174,14 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		37F355072506D9F400B68007 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				37F355082506D9FD00B68007 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		37F98C572505241D00F983C2 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +205,7 @@
 		37F98C622505241D00F983C2 /* FastNewsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				37F355072506D9F400B68007 /* Constants */,
 				378FAFAF250672EE00820841 /* Extensions */,
 				37F98CC12505829700F983C2 /* Protocols */,
 				37F98CB82505824F00F983C2 /* Network */,
@@ -203,6 +218,7 @@
 				37F98C6E2505242200F983C2 /* LaunchScreen.storyboard */,
 				37F98C712505242200F983C2 /* Info.plist */,
 				37F98C6B2505242200F983C2 /* Preview Content */,
+				37F355052506D9B000B68007 /* Localizable.strings */,
 			);
 			path = FastNewsSwiftUI;
 			sourceTree = "<group>";
@@ -395,6 +411,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 37F98C572505241D00F983C2;
 			packageReferences = (
@@ -416,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F98C702505242200F983C2 /* LaunchScreen.storyboard in Resources */,
+				37F355032506D9B000B68007 /* Localizable.strings in Resources */,
 				37F98C6D2505242200F983C2 /* Preview Assets.xcassets in Resources */,
 				37F98C6A2505242200F983C2 /* Assets.xcassets in Resources */,
 			);
@@ -477,6 +495,7 @@
 				37506D9D2505CE76006C2720 /* FeedContentView.swift in Sources */,
 				37F98CD1250593B400F983C2 /* HotNewsData.swift in Sources */,
 				37D99C8B2505AF2A00DD3948 /* ListingData.swift in Sources */,
+				37F355092506D9FD00B68007 /* Constants.swift in Sources */,
 				37F98CC9250584AB00F983C2 /* NetworkVariables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,10 +532,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		37F355052506D9B000B68007 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F355042506D9B000B68007 /* en */,
+				37F355062506D9B700B68007 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		37F98C6E2505242200F983C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				37F98C6F2505242200F983C2 /* Base */,
+				37F355002506D93500B68007 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -528,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -588,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
