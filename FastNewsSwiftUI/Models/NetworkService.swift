@@ -61,12 +61,7 @@ final class NetworkService<EndPoint: EndPointType>: NetworkRoutable {
             case .request:
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                 
-            case .requestParameters(let bodyEncoding, let parameters):
-                
-                
-                //request.setValue("Bearer " + fixedToken, forHTTPHeaderField: "Authorization")
-                
-                
+            case .requestParameters(let bodyEncoding, let parameters):                
                 try self.configureParameters(bodyEncoding: bodyEncoding, parameters: parameters, request: &request)
             }
             return request
