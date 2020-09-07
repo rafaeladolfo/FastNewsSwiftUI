@@ -16,10 +16,10 @@ struct FeedView: View {
             List {
                 ForEach(viewModel.hotNewsList) { news in
                     HStack {
-                        NavigationLink(destination: FeedDetailView()) {
+                        NavigationLink(destination: FeedDetailView(hotNewsViewModel: news)) {
                             Spacer()
                             
-                            FeedContentView()
+                            FeedContentView(model: news)
                             Spacer()
                         }
                     }

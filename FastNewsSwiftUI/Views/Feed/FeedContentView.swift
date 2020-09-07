@@ -7,30 +7,34 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct FeedContentView: View {
-    var model: HotNews
+    var model: HotNewsViewModel
     
     var body: some View {
         VStack (alignment: .leading) {
             HStack {
-                Text("Author")
-                Text("1 Hour")
+                Text(model.author)
+                Text(model.createdAt)
             }
-            VStack {
-                URL
-                .frame(width: 320, height: 200, alignment: .center).background(Color.red)
-            Text("Preview of the hot news described here.")
-                .fixedSize(horizontal: false, vertical: true)
+            VStack {                
+                Image(uiImage: model.image)
+                    .frame(width: 320, height: 200, alignment: .center)
+                    .background(Color.red)
+                    .clipped()
+                
+                Text(model.title)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             HStack(alignment: .center, spacing: 20 ){
                 Image(systemName: "square.and.arrow.up.fill")
                 Image(systemName: "captions.bubble")
-                Text("4")
+                Text(model.comments)
                 Image(systemName: "arrow.up")
-                Text("20")
+                Text(model.ups)
                 Image(systemName: "arrow.down")
-                Text("1")
+                Text(model.downs)
             }
         }
     }
@@ -38,6 +42,6 @@ struct FeedContentView: View {
 
 struct FeedContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedContentView()
+        FeedContentView(model: HotNewsViewModel(hotNews: HotNews()))
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FeedViewProtocol {
-    var hotNewsList: [HotNews] { get }
+    var hotNewsList: [HotNewsViewModel] { get }
     var isLoading: Bool { get }
     var after: String { get }
     
@@ -17,7 +17,7 @@ protocol FeedViewProtocol {
 }
 
 final class FeedViewModel: ObservableObject {
-    @Published var hotNewsList: [HotNews]
+    @Published var hotNewsList: [HotNewsViewModel]
     @Published var isLoading = false
     var after = ""
     
@@ -35,7 +35,8 @@ extension FeedViewModel {
             
             self.after = Response.data.after!
             for hotNews in Response.data.children {
-                self.hotNewsList.append(hotNews.data)
+                let hotNewsViewModel = HotNewsViewModel(hotNews: hotNews.data)
+                self.hotNewsList.append(hotNewsViewModel)
             }
         }) { (Failure) in
             print(Failure.description)

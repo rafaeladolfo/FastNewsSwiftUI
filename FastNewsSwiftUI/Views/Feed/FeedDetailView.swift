@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct FeedDetailView: View {
+    let hotNewsViewModel: HotNewsViewModel
+    
     var body: some View {
         VStack {
-            FeedContentView()
+            FeedContentView(model: hotNewsViewModel)
             List {
                 CommentView()
             }
@@ -21,6 +23,6 @@ struct FeedDetailView: View {
 
 struct FeedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedDetailView()
+        FeedDetailView(hotNewsViewModel: HotNewsViewModel(hotNews: HotNews()))
     }
 }
