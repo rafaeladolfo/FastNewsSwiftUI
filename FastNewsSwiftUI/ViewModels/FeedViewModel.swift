@@ -30,6 +30,7 @@ extension FeedViewModel {
     //MARK: - Public Implementations
     
     func getHotNews() {
+        self.isLoading = true
         NetworkManager.shared.getNews(afterValue: self.after , completion: { (Response) in
             
             self.after = Response.data.after!
@@ -37,9 +38,11 @@ extension FeedViewModel {
             for hotNews in Response.data.children {
                 let hotNewsViewModel = HotNewsViewModel(hotNews: hotNews.data)
                 self.hotNewsList.append(hotNewsViewModel)
+                self.isLoading = false
             }
         }) { (Failure) in
             print(Failure.description)
+            self.isLoading = false
         }
     }
     
