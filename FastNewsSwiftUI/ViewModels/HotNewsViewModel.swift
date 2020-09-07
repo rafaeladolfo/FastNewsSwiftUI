@@ -24,6 +24,7 @@ struct HotNewsViewModel: Identifiable {
     var image: UIImage
     var ups: String
     var downs: String
+    var name: String
     
     init(hotNews: HotNews) {
         id = hotNews.id ?? ""
@@ -36,6 +37,7 @@ struct HotNewsViewModel: Identifiable {
         ups = hotNews.ups?.toString ?? ""
         downs = hotNews.downs?.toString ?? ""
         image = UIImage()
+        name = hotNews.name ?? ""
         
         // preview url
         let previewUrl = hotNews.preview?.images?.first?.source?.url?.htmlDecoded ?? ""

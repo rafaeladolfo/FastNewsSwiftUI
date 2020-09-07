@@ -45,7 +45,7 @@ extension NetworkUtils : NetworkUtilsProtocol {
         
         switch networkEnvironment {
         case .production:
-            return ProductionApiUrl + port + "/" + defaultPath + "/" + version
+            return ProductionApiUrl + port + "/" + version
         case .test:
             return TestApiUrl + port + "/" + defaultPath + "/" +  version
         case .development:
